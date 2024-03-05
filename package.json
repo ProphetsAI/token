@@ -1,0 +1,19 @@
+{
+  "name": "jsonly",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "gen": "node gen.cjs",
+    "dev": "npm run gen && vite",
+    "build": "npm run gen && vite build",
+    "preview": "npm run gen && vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.12"
+  },
+  "dependencies": {
+    "@sqlite.org/sqlite-wasm": "3.44.2-build3",
+    "@vitejs/plugin-basic-ssl": "^1.1.0"
+  }
+}
